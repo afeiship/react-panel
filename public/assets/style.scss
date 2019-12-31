@@ -14,12 +14,24 @@ body,
 .app-container {
   padding: 50px;
   box-sizing: border-box;
-  font-family: 'Lato', 'Helvetica Neue', 'PingFang SC', 'Myriad Pro', 'Hiragino Sans GB', 'microsoft yahei';
-  .react-panel{
-    p{
+  font-family: "Lato", "Helvetica Neue", "PingFang SC", "Myriad Pro", "Hiragino Sans GB", "microsoft yahei";
+  .react-panel {
+    p {
       font-weight: 300;
       font-size: 12px;
       margin-bottom: 10px;
+    }
+  }
+
+  .group {
+    display: table;
+    border-collapse: collapse;
+    &-row {
+      display: table-row;
+    }
+    .react-panel {
+      width: 10%;
+      display: table-cell;
     }
   }
   .button {
