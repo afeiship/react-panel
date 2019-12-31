@@ -1,6 +1,6 @@
 {
   "name": "@feizheng/react-panel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React panel component.",
   "main": "dist/index.js",
   "scripts": {
