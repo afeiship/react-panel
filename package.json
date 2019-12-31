@@ -46,6 +46,7 @@
     "@babel/register": "^7.4.0",
     "@feizheng/rake-git": "^1.2.0",
     "@feizheng/react-blank": "^1.0.0",
+    "@feizheng/webkit-sassui-border-collapse": "^1.0.0",
     "@feizheng/webpack-lib-kits": "^1.1.0",
     "babel-loader": "^8.0.5",
     "cross-env": "^5.2.0",

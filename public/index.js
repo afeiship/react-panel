@@ -34,12 +34,16 @@ class App extends React.Component {
         <ReactBlank value={20} />
         <h4>PanelGroup</h4>
         <ReactBlank value={10} />
-        <div className="group">
-          <div className="group-row">
-            <ReactPanel header={<strong>少年的爱情</strong>}>
+        <div className="webkit-sassui-border-collapse__table">
+          <div className="webkit-sassui-border-collapse__row">
+            <ReactPanel
+              className="webkit-sassui-border-collapse__cell"
+              header={<strong>少年的爱情</strong>}>
               <p>少年时，想碰到一个聂小倩，拼了性命爱一场，天亮前带着她的魂魄远走他乡。</p>
             </ReactPanel>
-            <ReactPanel header={<strong>少年的爱情</strong>}>
+            <ReactPanel
+              className="webkit-sassui-border-collapse__cell"
+              header={<strong>少年的爱情</strong>}>
               <p>
                 中年时，想要一个田螺姑娘，温婉可人，红袖添香，半夜写累了，让她变回原形，加干辣椒、花椒、姜、蒜片爆炒，淋入香油，起锅装盘。
               </p>
