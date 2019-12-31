@@ -1,0 +1,29 @@
+$react-panel-options: (
+  height: 40px,
+  padding: 10px,
+  border-color: #eee,
+  backgroud-color: #f7f7f7,
+) !default;
+
+.react-panel {
+  $height: map-get($map: $react-panel-options, $key: height );
+  $padding: map-get($map: $react-panel-options, $key: padding );
+  $border-color: map-get($map: $react-panel-options, $key: border-color );
+  $backgroud-color: map-get($map: $react-panel-options, $key: backgroud-color );
+
+  border: 1px solid $border-color;
+
+  &__header {
+    border-bottom: 1px solid $border-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: $height;
+    background-color: $backgroud-color;
+    padding: 0 $padding;
+  }
+
+  &__body {
+    padding: $padding;
+  }
+}
