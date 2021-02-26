@@ -1,62 +1,36 @@
-import ReactPanel from '../src/main';
-import ReactDOM from 'react-dom';
+import ReactDemokit from '@jswork/react-demokit';
 import React from 'react';
-import ReactBlank from '@feizheng/react-blank';
-import ReactBorderCollapse from '@feizheng/react-border-collapse';
+import ReactDOM from 'react-dom';
+import ReactPanel from '../src/main';
 import './assets/style.scss';
 
 class App extends React.Component {
-  componentDidMount() {}
   render() {
     return (
-      <div className="app-container">
-        <ReactPanel header={<strong>少年的爱情</strong>}>
-          <p>少年时，想碰到一个聂小倩，拼了性命爱一场，天亮前带着她的魂魄远走他乡。</p>
-          <p>
-            青年时，想碰到一个白素贞，家大业大，要啥有啥，吃完软饭一抹嘴，还有人负责把她关进雷峰塔。
-          </p>
-          <p>
-            中年时，想要一个田螺姑娘，温婉可人，红袖添香，半夜写累了，让她变回原形，加干辣椒、花椒、姜、蒜片爆炒，淋入香油，起锅装盘。
-          </p>
-        </ReactPanel>
-        <ReactBlank value={10} />
-        <ReactPanel
-          header={
-            <React.Fragment>
-              <strong>Tao</strong>
-              <span>Chapter 1</span>
-            </React.Fragment>
-          }>
-          <p>道可道，非常道；名可名，非常名。</p>
-          <p>无名，天地之始，有名，万物之母。</p>
+      <ReactDemokit
+        className="p-3 app-container"
+        url="https://github.com/afeiship/react-panel">
+        <ReactPanel className="mb-5" header="I am panel title">
+          <p>道可道，非常道；名可名，非常名。 无名，天地之始，有名，万物之母。</p>
           <p>故常无欲，以观其妙，常有欲，以观其徼。</p>
           <p>此两者，同出而异名，同谓之玄，玄之又玄，众妙之门。</p>
         </ReactPanel>
-        <ReactBlank value={20} />
-        <h4>PanelGroup</h4>
-        <ReactBlank value={10} />
-        <ReactBorderCollapse>
-          <ReactPanel
-            className="webkit-sassui-border-collapse__cell"
-            header={<strong>少年的爱情</strong>}>
-            <p>少年时，想碰到一个聂小倩，拼了性命爱一场，天亮前带着她的魂魄远走他乡。</p>
-          </ReactPanel>
-          <ReactPanel
-            className="webkit-sassui-border-collapse__cell"
-            header={<strong>青年的爱情</strong>}>
-            <p>
-              青年时，想碰到一个白素贞，家大业大，要啥有啥，吃完软饭一抹嘴，还有人负责把她关进雷峰塔。
-            </p>
-          </ReactPanel>
-          <ReactPanel
-            className="webkit-sassui-border-collapse__cell"
-            header={<strong>中年的爱情</strong>}>
-            <p>
-              中年时，想要一个田螺姑娘，温婉可人，红袖添香，半夜写累了，让她变回原形，加干辣椒、花椒、姜、蒜片爆炒，淋入香油，起锅装盘。
-            </p>
-          </ReactPanel>
-        </ReactBorderCollapse>
-      </div>
+
+        <ReactPanel
+          className="mb-5"
+          header={
+            <h1>
+              <span>
+                我是<strong>定制化</strong>的标题
+              </span>
+            </h1>
+          }>
+          <p>天下皆知美之为美，斯恶已，皆知善之为善，斯不善已。</p>
+          <p>故有无相生，难易相成，长短相形，高下相倾，音声相和，前后相随。</p>
+          <p>是以圣人处无为之事，行不言之教，万物作焉而不辞，生而不有，为而不恃，功成而弗居。</p>
+          <p>夫惟弗居，是以不去。</p>
+        </ReactPanel>
+      </ReactDemokit>
     );
   }
 }
